@@ -19,8 +19,8 @@ def check_imei(imei):
     response = requests.request("POST", url, headers=headers, data=payload)
     try:
         response_json = response.json()
-        print(f"IMEI check response: {response_json}")  # Отладочный вывод
+        print(f"IMEI check response: {response_json}")
         return response_json
     except ValueError:
-        print(f"Failed to decode JSON response: {response.text}")  # Отладочный вывод
+        print(f"Failed to decode JSON response: {response.text}")  
         return f'Что-то пошло не так {response.text}'
