@@ -7,4 +7,3 @@ bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
 
 setup_handlers(bot, WHITE_LIST, check_imei)
 
-# bot.polling()
